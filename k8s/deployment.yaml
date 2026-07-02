@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: onlineportfolio-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: onlineportfolio
+  template:
+    metadata:
+      labels:
+        app: onlineportfolio
+    spec:
+      containers:
+        - name: onlineportfolio
+          image: onlineportfolio:v1        # Matches your step 33 image name exactly
+          imagePullPolicy: IfNotPresent   # Tells K8s to use your local image
+          ports:
+            - containerPort: 8081         # Matches your Spring Boot app port

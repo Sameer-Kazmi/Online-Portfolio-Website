@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="#">Your Name</a>
+            <div class="ms-auto">
+                <a href="#about" class="btn btn-outline-light btn-sm me-2">About</a>
+                <a href="#projects" class="btn btn-outline-light btn-sm me-2">Projects</a>
+                <a href="#contact" class="btn btn-outline-light btn-sm">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero text-center text-white d-flex align-items-center justify-content-center">
+        <div>
+            <h1 class="display-4 fw-bold">Hi, I'm Your Name</h1>
+            <p class="lead">Computer Science Engineering Student | Full-Stack Developer | DevOps Enthusiast</p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+
+        <!-- About -->
+        <div id="about" class="card shadow mb-5">
+            <div class="card-header bg-dark text-white">
+                <h3>About Me</h3>
+            </div>
+            <div class="card-body">
+                <p>
+                    I'm a Computer Science Engineering student passionate about building full-stack applications
+                    and exploring DevOps practices like CI/CD, containerization, and orchestration.
+                    This portfolio itself is built using Spring Boot, Docker, Jenkins and Kubernetes.
+                </p>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="card shadow mb-5">
+            <div class="card-header bg-success text-white">
+                <h3>Skills</h3>
+            </div>
+            <div class="card-body">
+                <span class="badge bg-primary m-1">Java</span>
+                <span class="badge bg-primary m-1">Spring Boot</span>
+                <span class="badge bg-primary m-1">HTML/CSS/JS</span>
+                <span class="badge bg-primary m-1">Bootstrap</span>
+                <span class="badge bg-primary m-1">Docker</span>
+                <span class="badge bg-primary m-1">Kubernetes</span>
+                <span class="badge bg-primary m-1">Jenkins</span>
+                <span class="badge bg-primary m-1">Git & GitHub</span>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects" class="card shadow mb-5">
+            <div class="card-header bg-primary text-white">
+                <h3>Projects</h3>
+            </div>
+            <div class="card-body">
+                <div class="row" id="projectContainer">
+                    <!-- Projects loaded dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="card shadow mb-5">
+            <div class="card-header bg-dark text-white">
+                <h3>Contact</h3>
+            </div>
+            <div class="card-body">
+                <p>Email: youremail@example.com</p>
+                <p>LinkedIn: linkedin.com/in/yourprofile</p>
+                <p>GitHub: github.com/yourusername</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="text-center text-white bg-dark p-3">
+        &copy; 2026 Your Name. All Rights Reserved.
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
